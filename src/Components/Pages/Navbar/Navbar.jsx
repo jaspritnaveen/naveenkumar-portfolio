@@ -4,10 +4,10 @@ import Navbar from "react-bootstrap/Navbar";
 // import Logo from "../../../Assets/logo.png";
 import "./Navbar.css";
 
-function BasicExample() {
+function Header() {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-body-tertiary p-3">
         <Container className="d-flex justify-content-around">
           <Navbar.Brand href="#home" className="brand-logo">
             NK
@@ -32,4 +32,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Header;

@@ -1,3 +1,77 @@
-.contact-iocn-part i{
-    color: black;
+.contact-iocn-part i {
+  color: black;
+}
+
+.naveen img {
+  border-radius: 50% !important;
+  height: 350px;
+  width: 350px;
+  border: 12px solid whitesmoke;
+}
+
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #4a42e8;
+  --accent-color: #ff6584;
+  --dark-color: #2f2e41;
+  --light-color: #f8f9fa;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --info-color: #17a2b8;
+  --bg-light: var(--light-color);
+  --text-light: var(--dark-color);
+  --bg-dark: #1f2937;
+  --text-dark: #d1d5db;
+}
+
+body {
+  background-color: #cfd9e7 !important;
+  color: var(--text-light);
+}
+
+.home-page {
+  min-height: 90vh;
+}
+
+.contact-icon-part ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  /* margin-right: 15px; */
+  color: var(--dark-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-icon-part ul li:hover {
+  background-color: #6c63ff !important;
+  color: white !important;
+  transform: translateY(-1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white !important;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: var(--dark-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+span {
+  color: #6c63ff;
+}
+
+h1 {
+  font-size: 48px !important;
+  margin-bottom: 20px;
+
+  font-weight: 700;
 }

@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# 🚀 Naveenkumar R — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio website built with **React.js**.  
+This portfolio showcases my **projects, skills, education, and career journey** as a frontend developer.
 
-## Available Scripts
+🔗 **Live Demo:** [Add GitHub Pages or Vercel/Netlify link here]
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 👨‍💻 About Me
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I am a motivated **Computer Science and Engineering student** (Bannari Amman Institute of Technology, CGPA: 8.07), passionate about building **responsive, user-friendly, and visually consistent web applications**.  
+I enjoy solving problems, creating clean UI components, and continuously learning new technologies.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Languages:** C, Java, Python
+- **Frontend Development:** HTML, CSS, JavaScript, Bootstrap, React.js
+- **Database:** MySQL
+- **Tools:** Git, GitHub, VS Code, Jira
+- **Languages Known:** Tamil, English
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Projects
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🌐 Corporate & Business Site Template (React.js) _(2023 – Present)_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Built clean, reusable React components
+- Designed responsive layouts for professional business websites
+- Focused on **UI consistency and user-friendly design**
 
-### `npm run eject`
+### 🥛 Dairy Products Website _(2021 – 2022)_
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Created a structured **product showcase website** using HTML & CSS
+- Highlighted products in a visually appealing layout
+- Improved navigation and browsing experience
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ✈️ Travel Agency Website _(2020 – 2021)_
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Designed a **responsive travel agency website** using HTML, CSS, and Bootstrap
+- Showcased travel packages with a clean structured layout
+- Ensured **cross-device compatibility**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🎓 Education
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **B.E. Computer Science and Engineering** — Bannari Amman Institute of Technology (2021–2025)  
+  _CGPA: 8.07_
+- **HSC** — Government Higher Secondary School (2020–2021) — _80%_
+- **SSLC** — Government Higher Secondary School (2018–2019) — _88.7%_
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📬 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- 📍 Address: 3/92, Avinashi
+- 📧 Email: [jaspritnaveen12@gmail.com](mailto:jaspritnaveen12@gmail.com)
+- 🔗 LinkedIn: [linkedin.com/in/jaspritnaveen](https://www.linkedin.com/in/jaspritnaveen/)
+- 💻 GitHub: [github.com/jaspritnaveen](https://github.com/jaspritnaveen)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ⚡ How to Run Locally
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   ```

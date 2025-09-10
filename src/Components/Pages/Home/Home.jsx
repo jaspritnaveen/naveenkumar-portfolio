@@ -5,53 +5,87 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import img from "../../../Assets/Passport_Photo_Blue.jpeg";
 
 function Home() {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h1>Hi, I'm Naveenkumar R</h1>
-          <p>
-            Motivated Computer Science Engineer and Frontend Developer
-            passionate about building responsive, user-friendly web applications
-            and innovative solutions. Skilled in React.js, JavaScript, and
-            modern web technologies, with a strong drive to learn and contribute
-            to impactful projects.
-          </p>
+    <div className="home-page d-flex flex-column flex-md-row align-items-md-center justify-content-center">
+      <Container>
+        <Row className="align-items-center">
+          {/* Left Column */}
+          <Col
+            xs={12}
+            md={6}
+            className="text-center text-md-start mb-4 mb-md-0"
+          >
+            <h1 className="fw-bold pt-3">
+              Hi, I'm <span>Naveenkumar R</span>
+            </h1>
+            <p className="mt-3 ">
+              Motivated Computer Science Engineer and Frontend Developer
+              passionate about building responsive, user-friendly web
+              applications and innovative solutions. Skilled in React.js,
+              JavaScript, and modern web technologies, with a strong drive to
+              learn and contribute to impactful projects.
+            </p>
 
-          <div className="home-button">
-            <Button variant="outline-primary">MyProjects</Button>
-            <Button variant="outline-primary">Contact Me</Button>
-          </div>
+            <div className="home-button d-flex justify-content-center justify-content-md-start gap-3 mt-4">
+              <Button variant="outline-primary">My Projects</Button>
+              <Button variant="outline-primary">Contact Me</Button>
+            </div>
 
-          <div className="contact-iocn-part">
-            <ul>
-              <li>
-                <a href="https://www.linkedin.com/in/jaspritnaveen/">
-                  <i class="bi bi-linkedin"></i>
-                </a>
-              </li>
+            <div>
+              <Button variant="outline-primary" className="mt-3 ps-4 pe-4">
+                Download CV
+              </Button>
+            </div>
 
-              <li>
-                <a href="https://github.com/jaspritnaveen">
-                  <i class="bi bi-github"></i>
-                </a>
-              </li>
+            <div className="contact-icon-part">
+              <ul className="list-unstyled d-flex justify-content-center justify-content-md-start gap-3 pt-3">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/jaspritnaveen/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="bi bi-linkedin fs-4"></i>
+                  </a>
+                </li>
 
-              <li>
-                <i class="bi bi-envelope-fill"></i>
-              </li>
+                <li>
+                  <a
+                    href="https://github.com/jaspritnaveen"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="bi bi-github fs-4"></i>
+                  </a>
+                </li>
 
-              <li>
-                <i class="bi bi-telephone"></i>
-              </li>
-            </ul>
-          </div>
-        </Col>
-        <Col>2 of 2</Col>
-      </Row>
-    </Container>
+                <li>
+                  <a href="mailto:jaspritnaveen@gmail.com">
+                    <i className="bi bi-envelope-fill fs-4"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="tel:6383146128">
+                    <i className="bi bi-telephone fs-4"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </Col>
+
+          {/* Right Column */}
+          <Col xs={12} md={6} className="text-center">
+            <div className="naveen">
+              <img src={img} alt="Naveenkumar" className="img-fluid rounded" />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }
 
