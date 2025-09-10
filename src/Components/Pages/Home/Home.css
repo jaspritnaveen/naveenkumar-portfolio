@@ -72,6 +72,16 @@ span {
 h1 {
   font-size: 48px !important;
   margin-bottom: 20px;
-
   font-weight: 700;
+}
+
+.intro{
+  text-align: justify;
+  line-height: 2;
+}
+
+@media (min-width: 794px) and (max-width: 1199.98px) {
+  .home-page {
+    min-height: 40vh;
+  }
 }

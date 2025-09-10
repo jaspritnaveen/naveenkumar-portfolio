@@ -1,3 +1,66 @@
+.brand-logo {
+  background-color: #6c63ff;
+  border-radius: 50%;
+  padding: 5px;
+  height: 45px;
+  width: 45px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu-toggle-btn i {
+  font-size: 26px;
+  border: 1px solid rgba(0, 0, 0, 0.707);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.nav-menu-toggle-btn i:hover {
+  color: white;
+  background-color: #6c63ff;
+  border: 1px solid white;
+}
+
 .bg-body-tertiary {
-  background-color: #f8f9fa ;
+  background-color: #f8f9fa;
+}
+
+.nav-menu-toggle-btn:focus,
+.nav-menu-toggle-btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.nav-menu-toggle-btn {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .nav-menu-toggle-btn i {
+    display: none;
+  }
+}
+
+@media (max-width: 481px) {
+  .nav-menu-toggle-btn i {
+    display: none;
+  }
+}
+
+@media (min-width: 794px) and (max-width: 1199.98px) {
+  .nav-menu-toggle-btn i {
+    display: none;
+  }
 }

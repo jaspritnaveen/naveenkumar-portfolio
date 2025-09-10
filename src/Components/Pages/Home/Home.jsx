@@ -21,7 +21,7 @@ function Home() {
             <h1 className="fw-bold pt-3">
               Hi, I'm <span>Naveenkumar R</span>
             </h1>
-            <p className="mt-3 ">
+            <p className="mt-3 intro">
               Motivated Computer Science Engineer and Frontend Developer
               passionate about building responsive, user-friendly web
               applications and innovative solutions. Skilled in React.js,
