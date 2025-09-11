@@ -1,36 +1,6 @@
-import React, { useState } from "react";
-import { Navbar, Container, Nav, Button, Offcanvas } from "react-bootstrap";
+import React from "react";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import "./Navbar.css";
-
-// OffCanvasExample component
-function OffCanvasExample({ name, ...props }) {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  return (
-    <>
-      <Button
-        variant=""
-        onClick={handleShow}
-        className="me-2 d-flex align-items-center nav-menu-toggle-btn"
-      >
-        <i className="bi bi-list"></i>
-      </Button>
-
-      <Offcanvas show={show} onHide={handleClose} {...props}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-        </Offcanvas.Body>
-      </Offcanvas>
-    </>
-  );
-}
 
 // Main NavigationBar component
 function NavigationBar() {
@@ -58,9 +28,6 @@ function NavigationBar() {
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-
-        {/* Offcanvas example button */}
-        <OffCanvasExample placement="end" name="Open Menu" />
       </Container>
     </Navbar>
   );

@@ -18,10 +18,10 @@ function Home() {
             md={6}
             className="text-center text-md-start mb-4 mb-md-0"
           >
-            <h1 className="fw-bold pt-3">
-              Hi, I'm <span>Naveenkumar R</span>
+            <h1 className="hero-title fw-bold pt-3">
+              Hi, I'm <span className="hero-name">Naveenkumar R</span>
             </h1>
-            <p className="mt-3 intro">
+            <p className="hero-subtitle mt-3">
               Motivated Computer Science Engineer and Frontend Developer
               passionate about building responsive, user-friendly web
               applications and innovative solutions. Skilled in React.js,
@@ -79,8 +79,12 @@ function Home() {
 
           {/* Right Column */}
           <Col xs={12} md={6} className="text-center">
-            <div className="naveen">
-              <img src={img} alt="Naveenkumar" className="img-fluid rounded" />
+            <div className="profile-image">
+              <img
+                src={img}
+                alt="Naveenkumar"
+                className="profile-photo img-fluid rounded"
+              />
             </div>
           </Col>
         </Row>

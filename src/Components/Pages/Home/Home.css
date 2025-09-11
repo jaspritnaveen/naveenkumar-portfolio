@@ -1,38 +1,33 @@
+/* Home Page */
+
+.home-page {
+  min-height: 90vh;
+  background-color: #cfd9e7 !important;
+  color: #2f2e41;
+}
+
+/* Left Part */
+
+.hero-title span {
+  color: #6c63ff;
+}
+
+.hero-title {
+  font-size: 48px !important;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  text-align: justify;
+  line-height: 2;
+}
+
 .contact-iocn-part i {
   color: black;
 }
 
-.naveen img {
-  border-radius: 50% !important;
-  height: 350px;
-  width: 350px;
-  border: 12px solid whitesmoke;
-}
-
-:root {
-  --primary-color: #6c63ff;
-  --secondary-color: #4a42e8;
-  --accent-color: #ff6584;
-  --dark-color: #2f2e41;
-  --light-color: #f8f9fa;
-  --success-color: #28a745;
-  --warning-color: #ffc107;
-  --danger-color: #dc3545;
-  --info-color: #17a2b8;
-  --bg-light: var(--light-color);
-  --text-light: var(--dark-color);
-  --bg-dark: #1f2937;
-  --text-dark: #d1d5db;
-}
-
-body {
-  background-color: #cfd9e7 !important;
-  color: var(--text-light);
-}
-
-.home-page {
-  min-height: 90vh;
-}
+/* Contact Icon Part */
 
 .contact-icon-part ul li {
   display: flex;
@@ -42,8 +37,7 @@ body {
   height: 40px;
   background-color: white;
   border-radius: 50%;
-  /* margin-right: 15px; */
-  color: var(--dark-color);
+  color: #2f2e41;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
@@ -60,28 +54,45 @@ body {
   background-color: white !important;
   border-radius: 50%;
   margin-right: 10px;
-  color: var(--dark-color);
+  color: #2f2e41;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
-span {
-  color: #6c63ff;
+/* Right Part */
+
+.profile-image img {
+  border-radius: 50% !important;
+  height: 350px;
+  width: 350px;
+  border: 12px solid whitesmoke;
 }
 
-h1 {
-  font-size: 48px !important;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
+/* Home page Mobile View */
 
-.intro{
-  text-align: justify;
-  line-height: 2;
-}
-
-@media (min-width: 794px) and (max-width: 1199.98px) {
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Home page */
   .home-page {
     min-height: 40vh;
+  }
+
+  /* Left Part */
+
+  .hero-title {
+    font-size: 32px !important;
+    padding: 0 20px;
+  }
+
+  .hero-subtitle {
+    padding: 0 5px;
+  }
+
+  /* Right Part */
+
+  .profile-image img {
+    border-radius: 50% !important;
+    height: 240px;
+    width: 240px;
+    border: 12px solid whitesmoke;
   }
 }
