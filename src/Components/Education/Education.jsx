@@ -7,14 +7,7 @@ const EducationTimeline = () => {
       <div class="container py-5">
         <h2 class="text-center mb-5">Our Journey Timeline</h2>
         <div class="timeline">
-          <div class="timeline-item left">
-            <div class="timeline-content">
-              <p>2021 - 2025</p>
-              <h6>Bachelor of Engineering in Computer Science</h6>
-              <p>Bannari Amman Institute of Technology, Erode</p>
-              <p>CGPA: 8.07</p>
-            </div>
-          </div>
+          
           <div class="timeline-item right">
             <div class="timeline-content">
               <p>2020 - 2021</p>
