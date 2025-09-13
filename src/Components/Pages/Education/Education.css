@@ -22,25 +22,6 @@
   width: 50%;
 }
 
-.timeline-one {
-  margin-left: 230px;
-  width: 417px;
-   
-}
-
-.timeline-two {
-  width: max-content;
-}
-.card{
-  background-color: #6c63ff !important;
-  color: white !important;
-}
-
-.timeline-three {
-  margin-left: 230px;
-  width: 417px;
-}
-
 /* The circles on the timeline */
 .timeline::after {
   content: "";
@@ -138,5 +119,19 @@
   /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
+  }
+
+  .timeline-one {
+    margin-left: auto;
+    width: auto;
+  }
+
+  .timeline-two {
+    width: auto;
+  }
+
+  .timeline-three {
+    margin-left: auto;
+    width: auto;
   }
 }

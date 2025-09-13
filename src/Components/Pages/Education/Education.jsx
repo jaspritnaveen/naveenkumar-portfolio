@@ -6,6 +6,7 @@ const EducationTimeline = () => {
     <>
       <section style={{ backgroundColor: "#f0f2f5" }} class="timeline-section">
         <div class="container py-5">
+          <h4 className="text-center pb-5">My Education</h4>
           <div class="main-timeline">
             <div class="timeline left timeline-one ">
               <div class="card">
