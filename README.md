@@ -64,9 +64,4 @@ I enjoy solving problems, creating clean UI components, and continuously learnin
 
 ---
 
-## ⚡ How to Run Locally
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   ```
