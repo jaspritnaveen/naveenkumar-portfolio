@@ -5,8 +5,10 @@ import emailjs from "@emailjs/browser";
 export const ContactUs = () => {
   const form = useRef();
 
-  const sendEmail = (e) =>     e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
+   
       .then(
         () => {
           console.log("SUCCESS!");
