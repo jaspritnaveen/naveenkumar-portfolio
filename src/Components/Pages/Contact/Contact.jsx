@@ -5,31 +5,32 @@ import emailjs from "@emailjs/browser";
 export const ContactUs = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = (e) =>     e.preventDefault();
 
-    emailjs
-      .sendForm("service_4wv06g7", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
-      })
       .then(
         () => {
           console.log("SUCCESS!");
+          alert("Your message was sent!");
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
+          alert("Message failed: " + error.text);
         }
       );
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail} className="contact-form">
       <label>Name</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="from_name" required />
+
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="from_email" required />
+
       <label>Message</label>
-      <textarea name="message" />
+      <textarea name="message" rows="5" required />
+
       <input type="submit" value="Send" />
     </form>
   );
