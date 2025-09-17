@@ -5,7 +5,7 @@ import Home from "./Components/Pages/Home/Home";
 import Header from "./Components/Pages/Navbar/Navbar";
 import Skills from "./Components/Pages/Skills/Skills";
 import Project from "./Components/Pages/Projects/Project";
-import { ContactUs } from "./Components/Pages/Contact/Contact";
+// import { ContactUs } from "./Components/Pages/Contact/Contact";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <EducationTimeline />
       <Skills />
       <Project/>
-      <ContactUs/>
+      {/* <ContactUs/> */}
     </div>
   );
 }

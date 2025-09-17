@@ -19,10 +19,10 @@ const Project = () => {
             </p>
           </div>
 
-          <div className="row g-4">
+          <div className="container row g-4 ">
             {/* Project 1 */}
             <div className="col-md-6 col-lg-4">
-              <article className="project-card card h-100 shadow-sm">
+              <article className="project-card card  h-100 shadow-sm">
                 <div className="project-image business-img">
                   <img
                     src={business}
@@ -58,7 +58,7 @@ const Project = () => {
 
             {/* Project 2 */}
             <div className="col-md-6 col-lg-4">
-              <article className="project-card card h-100 shadow-sm">
+              <article className="project-card card  h-100 shadow-sm">
                 <div className="project-image">
                   <img src={milk} alt="Milky Mist" className="card-img-top" />
                 </div>
@@ -89,7 +89,7 @@ const Project = () => {
 
             {/* Project 3 */}
             <div className="col-md-6 col-lg-4">
-              <article className="project-card card h-100 shadow-sm">
+              <article className="project-card card  h-100 shadow-sm">
                 <div className="project-image">
                   <img
                     src={travel}
@@ -125,7 +125,7 @@ const Project = () => {
 
             {/* Project 4 */}
             <div className="col-md-6 col-lg-4">
-              <article className="project-card card h-100 shadow-sm">
+              <article className="project-card card  h-100 shadow-sm">
                 <div className="project-image">
                   <img
                     src={portfolio}
@@ -163,7 +163,7 @@ const Project = () => {
 
             {/* Project 5 */}
             <div className="col-md-6 col-lg-4">
-              <article className="project-card card h-100 shadow-sm">
+              <article className="project-card card  h-100 shadow-sm">
                 <div className="project-image">
                   <img
                     src={form}
