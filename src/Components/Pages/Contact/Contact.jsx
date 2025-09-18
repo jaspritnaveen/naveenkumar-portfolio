@@ -8,13 +8,7 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_4wv06g7", // your service ID
-        "template_yqbjlzp", // your template IDs
-        form.current,
-        "D4ouhHYzn5Y-CAfNC" // your public key
-      )
+ 
       .then(
         () => {
           console.log("SUCCESS!");
