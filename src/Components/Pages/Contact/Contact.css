@@ -16,6 +16,8 @@ textarea {
   outline: none;
   padding: 10px;
   border-radius: 5px;
-
 }
 
+.contact {
+  background-color: violet;
+}

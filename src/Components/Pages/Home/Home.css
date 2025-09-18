@@ -61,12 +61,12 @@
 
 /* Right Part */
 
-.profile-image img {
+/* .profile-image img {
   border-radius: 50% !important;
   height: 350px;
   width: 350px;
   border: 12px solid whitesmoke;
-}
+} */
 
 /* Home page Mobile View */
 
@@ -89,10 +89,10 @@
 
   /* Right Part */
 
-  .profile-image img {
+  /* .profile-image img {
     border-radius: 50% !important;
     height: 240px;
     width: 240px;
     border: 12px solid whitesmoke;
-  }
+  } */
 }

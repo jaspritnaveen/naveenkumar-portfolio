@@ -6,6 +6,8 @@ import Header from "./Components/Pages/Navbar/Navbar";
 import Skills from "./Components/Pages/Skills/Skills";
 import Project from "./Components/Pages/Projects/Project";
 // import { ContactUs } from "./Components/Pages/Contact/Contact";
+import Footer from "./Components/Pages/Footer/Footer";
+import Welcome from "./Components/Pages/Welcome/Welcome";
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
       <About />
       <EducationTimeline />
       <Skills />
-      <Project/>
-      {/* <ContactUs/> */}
+      <Project />
+      {/* <ContactUs /> */}
+      <Welcome/>
+      <Footer />
     </div>
   );
 }

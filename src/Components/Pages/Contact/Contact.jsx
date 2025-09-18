@@ -8,7 +8,13 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-   
+    emailjs
+      .sendForm(
+        "service_4wv06g7", // your service ID
+        "template_yqbjlzp", // your template IDs
+        form.current,
+        "D4ouhHYzn5Y-CAfNC" // your public key
+      )
       .then(
         () => {
           console.log("SUCCESS!");
@@ -23,17 +29,21 @@ export const ContactUs = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="contact-form">
-      <label>Name</label>
-      <input type="text" name="from_name" required />
+    <>
+      <div className="contact">
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
+          <label>Name</label>
+          <input type="text" name="from_name" required />
 
-      <label>Email</label>
-      <input type="email" name="from_email" required />
+          <label>Email</label>
+          <input type="email" name="from_email" required />
 
-      <label>Message</label>
-      <textarea name="message" rows="5" required />
+          <label>Message</label>
+          <textarea name="message" rows="5" required />
 
-      <input type="submit" value="Send" />
-    </form>
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+    </>
   );
 };

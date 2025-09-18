@@ -6,6 +6,8 @@ import milk from "../../../Assets/Projects/milkymist.png";
 import travel from "../../../Assets/Projects/villa.png";
 import form from "../../../Assets/Projects/form.png";
 import portfolio from "../../../Assets/Projects/portfolio.png";
+import mexantImg from "../../../Assets/Projects/mexant.png";
+
 const Project = () => {
   return (
     <>
@@ -19,10 +21,10 @@ const Project = () => {
             </p>
           </div>
 
-          <div className="container row g-4 ">
+          <div className=" px-4 row g-4 gy-4 ">
             {/* Project 1 */}
-            <div className="col-md-6 col-lg-4">
-              <article className="project-card card  h-100 shadow-sm">
+            <div className="col-md-6 col-lg-4 p-0 p-md-4">
+              <article className="project-card card border-0  h-100 shadow-sm">
                 <div className="project-image business-img">
                   <img
                     src={business}
@@ -57,8 +59,8 @@ const Project = () => {
             </div>
 
             {/* Project 2 */}
-            <div className="col-md-6 col-lg-4">
-              <article className="project-card card  h-100 shadow-sm">
+            <div className="col-md-6 col-lg-4 p-0 p-md-4">
+              <article className="project-card card border-0 h-100 shadow-sm">
                 <div className="project-image">
                   <img src={milk} alt="Milky Mist" className="card-img-top" />
                 </div>
@@ -88,8 +90,8 @@ const Project = () => {
             </div>
 
             {/* Project 3 */}
-            <div className="col-md-6 col-lg-4">
-              <article className="project-card card  h-100 shadow-sm">
+            <div className="col-md-6 col-lg-4 p-0 p-md-4">
+              <article className="project-card card border-0 h-100 shadow-sm">
                 <div className="project-image">
                   <img
                     src={travel}
@@ -124,8 +126,8 @@ const Project = () => {
             </div>
 
             {/* Project 4 */}
-            <div className="col-md-6 col-lg-4">
-              <article className="project-card card  h-100 shadow-sm">
+            <div className="col-md-6 col-lg-4 p-0 p-md-4">
+              <article className="project-card card border-0 h-100 shadow-sm">
                 <div className="project-image">
                   <img
                     src={portfolio}
@@ -162,8 +164,8 @@ const Project = () => {
             </div>
 
             {/* Project 5 */}
-            <div className="col-md-6 col-lg-4">
-              <article className="project-card card  h-100 shadow-sm">
+            <div className="col-md-6 col-lg-4 p-0 p-md-4">
+              <article className="project-card card border-0 h-100 shadow-sm">
                 <div className="project-image">
                   <img
                     src={form}
@@ -197,6 +199,58 @@ const Project = () => {
                     >
                       <i className="fas fa-link"></i> View Project
                     </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            {/* Project 6 */}
+            <div className="col-md-6 col-lg-4 p-0 p-md-4">
+              <article className="project-card card border-0 h-100 shadow-sm">
+                <div className="project-image">
+                  <img
+                    src={mexantImg}
+                    alt="Responsive Website Project"
+                    className="card-img-top"
+                  />
+                </div>
+                <div className="project-info card-body">
+                  <h3 className="card-title">Responsive Business Website</h3>
+                  <p className="card-text">
+                    Designed and developed a fully responsive multi-page website
+                    using modern layout techniques, optimized for mobile
+                    devices, and integrated custom content and styles.
+                  </p>
+
+                  {/* Technologies used */}
+                  <div className="project-tags mb-4">
+                    <span className="badge tag text-dark me-2">HTML</span>
+                    <span className="badge tag text-dark me-2">CSS</span>
+                    <span className="badge tag text-dark me-2">Bootstrap</span>
+                    <span className="badge tag text-dark me-2">React JS</span>
+                  </div>
+
+                  <div className="project-links d-flex justify-content-between align-items-center align-items-center">
+                    <a
+                      href="https://your-live-link.com"
+                      className="btn btn-outline-primary btn-sm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fas fa-link me-1"></i> View Project
+                    </a>
+
+                    <div className="repo-link">
+                      <a
+                        href="https://github.com/your-repo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="d-flex justify-content-center align-items-center"
+                      >
+                        <i className="bi bi-link me-2 fs-4"></i>
+                        GitHub Source
+                      </a>
+                    </div>
                   </div>
                 </div>
               </article>

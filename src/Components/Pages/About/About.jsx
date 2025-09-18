@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import img from "../../../Assets/about.jpg";
 import Button from "react-bootstrap/Button";
+import resume from "../../../Assets/Resume/Naveenkumarresume.pdf";
 
 const About = () => {
   return (
@@ -77,9 +78,11 @@ const About = () => {
                   </a>
                 </li>
 
-                <Button variant="outline-primary" className="mt-3">
-                  Download Resume
-                </Button>
+                <a href={resume} download="Naveenkumar_Resume.pdf">
+                  <Button variant="outline-primary" className="mt-3">
+                    Download Resume
+                  </Button>
+                </a>
               </ul>
             </div>
           </div>

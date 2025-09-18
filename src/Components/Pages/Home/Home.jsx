@@ -5,7 +5,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import img from "../../../Assets/Passport_Photo_Blue.jpeg";
+import img from "../../../Assets/gif.png";
+import resume from "../../../Assets/Resume/Naveenkumarresume.pdf";
 
 function Home() {
   return (
@@ -35,9 +36,11 @@ function Home() {
             </div>
 
             <div>
-              <Button variant="outline-primary" className="mt-3 ps-4 pe-4">
-                Download CV
-              </Button>
+              <a href={resume} download="Naveenkumar_Resume.pdf">
+                <Button variant="outline-primary" className="mt-3 ps-4 pe-4">
+                  Download CV
+                </Button>
+              </a>
             </div>
 
             <div className="contact-icon-part">
