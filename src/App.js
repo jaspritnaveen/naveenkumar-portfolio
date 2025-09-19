@@ -5,7 +5,7 @@ import Home from "./Components/Pages/Home/Home";
 import Header from "./Components/Pages/Navbar/Navbar";
 import Skills from "./Components/Pages/Skills/Skills";
 import Project from "./Components/Pages/Projects/Project";
-// import { ContactUs } from "./Components/Pages/Contact/Contact";
+import { ContactUs } from "./Components/Pages/Contact/Contact";
 import Footer from "./Components/Pages/Footer/Footer";
 import Welcome from "./Components/Pages/Welcome/Welcome";
 
@@ -18,7 +18,7 @@ function App() {
       <EducationTimeline />
       <Skills />
       <Project />
-      {/* <ContactUs /> */}
+      <ContactUs />
       <Welcome/>
       <Footer />
     </div>

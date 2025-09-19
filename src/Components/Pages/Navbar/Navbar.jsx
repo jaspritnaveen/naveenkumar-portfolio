@@ -5,7 +5,7 @@ import "./Navbar.css";
 // Main NavigationBar component
 function NavigationBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary p-3">
+    <Navbar expand="lg" className="bg-body-tertiary p-3" sticky="top">
       <Container>
         {/* Logo and brand */}
         <Navbar.Brand href="/" className="brand-logo">
