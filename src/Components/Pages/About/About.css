@@ -8,17 +8,13 @@
   line-height: 35px;
 }
 
-
-.quick-info li a{
-    text-decoration: none;
+.quick-info li a {
+  text-decoration: none;
 }
-
-
-
 
 /* Right side */
 
-.about-intro{
-    text-align: justify;
-    line-height: 30px;
+.about-intro {
+  text-align: justify;
+  line-height: 30px;
 }
