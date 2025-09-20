@@ -4,8 +4,8 @@ const Welcome = () => {
   return (
     <>
       <div className="welcome-mes">
-        <section class="welcome-section">
-          <div class="welcome-card">
+        <section className="welcome-section">
+          <div className="welcome-card">
             <h1>Welcome to My Portfolio</h1>
             <p>
               Thank you for visiting my portfolio website! I am excited to share

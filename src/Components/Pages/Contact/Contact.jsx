@@ -10,43 +10,49 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 export const ContactUs = () => {
-  const form = useRef();
+    const formRef = useRef(null);
+  const [validated, setValidated] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
 
+  // validation
+  const handleValidation = (event) => {
+    const formEl = event.currentTarget;
+    if (formEl.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+      setValidated(true);
+      return false; // invalid
+    }
+    setValidated(true);
+    return true; // valid
+  };
+
+  // send email
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
         "service_4wv06g7", // your service ID
-        "template_yqbjlzp", // your template IDs
-        form.current,
+        "template_yqbjlzp", // your template ID
+        formRef.current,
         "D4ouhHYzn5Y-CAfNC" // your public key
       )
       .then(
         () => {
           console.log("SUCCESS!");
-          alert("Your message was sent!");
-          form.current.reset();
+          formRef.current.reset();
+          setValidated(false);
+          // show the alert
+          setShowAlert(true);
+          // auto-hide after 3 seconds
+          setTimeout(() => setShowAlert(false), 3000);
         },
         (error) => {
           console.log("FAILED...", error.text);
-          alert("Message failed: " + error.text);
+          // you could also show an error alert
         }
       );
-  };
-
-  // Form
-
-  const [validated, setValidated] = useState(false);
-
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
-    setValidated(true);
   };
   return (
     <>
@@ -154,7 +160,13 @@ export const ContactUs = () => {
                   <Form
                     noValidate
                     validated={validated}
-                    onSubmit={handleSubmit}
+                    ref={formRef}
+                    onSubmit={(e) => {
+                      // first run validation, only send if valid
+                      if (handleValidation(e)) {
+                        sendEmail(e);
+                      }
+                    }}
                     className="contact-form-wrapper"
                   >
                     <Row>
@@ -169,6 +181,7 @@ export const ContactUs = () => {
                           required
                           type="text"
                           placeholder="Your name"
+                          name="from_name"
                         />
                         <Form.Control.Feedback type="invalid">
                           Please enter your name.
@@ -186,6 +199,7 @@ export const ContactUs = () => {
                           required
                           type="email"
                           placeholder="Your Email"
+                          name="from_email"
                         />
                         <Form.Control.Feedback type="invalid">
                           Please enter a valid email address.
@@ -204,6 +218,7 @@ export const ContactUs = () => {
                             type="text"
                             placeholder="Subject"
                             aria-describedby="inputGroupPrepend"
+                            name="from_subject"
                             required
                           />
                           <Form.Control.Feedback type="invalid">
@@ -224,6 +239,7 @@ export const ContactUs = () => {
                           rows={4}
                           placeholder="Write your message"
                           required
+                          name="message"
                         />
                         <Form.Control.Feedback type="invalid">
                           Please write a message.
