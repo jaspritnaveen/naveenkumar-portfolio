@@ -75,10 +75,7 @@ const Skills = () => {
               <img src={ReactImg} className="skill-icon" alt="React" />
               <h4>React</h4>
             </div>
-            <div className="skill-card">
-              <img src={sqlimg} className="skill-icon" alt="React" />
-              <h4>SQL</h4>
-            </div>
+            
             <div className="skill-card">
               <img src={Java} className="skill-icon" alt="Java" />
               <h4>Java</h4>
