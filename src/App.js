@@ -8,7 +8,6 @@ import Project from "./Components/Pages/Projects/Project";
 import { ContactUs } from "./Components/Pages/Contact/Contact";
 import Footer from "./Components/Pages/Footer/Footer";
 import Welcome from "./Components/Pages/Welcome/Welcome";
-import Animation from "./Components/Pages/Animation/Animation";
 
 function App() {
   return (
@@ -22,7 +21,7 @@ function App() {
       <ContactUs />
       <Welcome/>
       <Footer />
-      <Animation/>
+      
     </div>
   );
 }

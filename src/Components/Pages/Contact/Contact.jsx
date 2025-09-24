@@ -10,7 +10,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 export const ContactUs = () => {
-    const formRef = useRef(null);
+  const formRef = useRef(null);
   const [validated, setValidated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
 
