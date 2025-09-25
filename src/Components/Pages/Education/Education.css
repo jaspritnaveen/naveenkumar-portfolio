@@ -3,6 +3,8 @@
   position: relative;
 }
 
+
+
 /* The actual timeline (the vertical ruler) */
 .main-timeline::after {
   content: "";
