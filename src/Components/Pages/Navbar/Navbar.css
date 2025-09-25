@@ -1,5 +1,11 @@
 /* Logo and brand */
 
+.nav-bar {
+  background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  /* background: linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%); */
+}
 .brand-logo {
   background-color: #6c63ff;
   border-radius: 50%;

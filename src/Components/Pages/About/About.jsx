@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import img from "../../../Assets/about.jpg";
+import professionalimg from "../../../Assets/professionalimg.png";
 import Button from "react-bootstrap/Button";
 import resume from "../../../Assets/Resume/Naveenkumarresume.pdf";
 
@@ -21,7 +22,7 @@ const About = () => {
             {/* Left Column – Image */}
             <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
               <img
-                src={img}
+                src={professionalimg}
                 alt="Naveenkumar"
                 className="about-img img-fluid rounded"
               />
@@ -65,18 +66,7 @@ const About = () => {
                 <li>
                   <strong>Date of Birth:</strong> March 12, 2004
                 </li>
-                <li>
-                  <strong>LinkedIn:</strong>{" "}
-                  <a href="https://linkedin.com/in/jaspritnaveen">
-                    linkedin.com/in/jaspritnaveen
-                  </a>
-                </li>
-                <li>
-                  <strong>GitHub:</strong>{" "}
-                  <a href="https://github.com/jaspritnaveen">
-                    github.com/jaspritnaveen
-                  </a>
-                </li>
+              
 
                 <a href={resume} download="Naveenkumar_Resume.pdf">
                   <Button variant="outline-primary" className="mt-3">

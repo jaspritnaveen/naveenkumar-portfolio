@@ -2,8 +2,10 @@
 
 .home-page {
   min-height: 90vh;
-  background-color: #cfd9e7 !important;
+  /* background-color: white !important; */
+  
   color: #2f2e41;
+  padding: 40px 80px;
 }
 
 /* Left Part */
@@ -61,12 +63,15 @@
 
 /* Right Part */
 
-/* .profile-image img {
-  border-radius: 50% !important;
-  height: 350px;
-  width: 350px;
-  border: 12px solid whitesmoke;
-} */
+.profile-image img {
+  /* border-radius: 50% !important;
+  height: 550px;
+  width: 550px; */
+  /* border: 12px solid whitesmoke; */
+
+  max-width: 100%;
+  height: auto;
+}
 
 /* Home page Mobile View */
 
@@ -74,6 +79,7 @@
   /* Home page */
   .home-page {
     min-height: 40vh;
+    padding: 10px 20px;
   }
 
   /* Left Part */
@@ -96,3 +102,5 @@
     border: 12px solid whitesmoke;
   } */
 }
+
+

@@ -1,6 +1,12 @@
+.about-page {
+  /* background-color: #fdfdfd !important; */
+
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
 .about-img {
-  height: 420px !important;
-  width: 252px;
+  height: 430px !important;
+  width: 300px;
   border-radius: 10px;
 }
 

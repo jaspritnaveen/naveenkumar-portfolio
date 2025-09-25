@@ -28,11 +28,7 @@
   flex: 0 0 auto;
 }
 
-.skills-section h2 {
-  font-size: clamp(2rem, 5vw, 2.5rem);
-  margin-bottom: 40px;
-  font-weight: 700;
-}
+
 .level-label {
   font-size: 14px;
   font-weight: 600;

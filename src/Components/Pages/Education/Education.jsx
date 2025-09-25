@@ -9,7 +9,7 @@ const EducationTimeline = () => {
         className="timeline-section"
       >
         <div className="container py-5">
-          <h4 className="text-center pb-5">My Education</h4>
+          <h2 className="text-center pb-5">My Education</h2>
           <div className="main-timeline">
             <div className="timeline left timeline-one">
               <div className="card">
