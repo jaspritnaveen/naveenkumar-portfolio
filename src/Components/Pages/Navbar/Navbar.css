@@ -11,7 +11,9 @@
 
 /* Navbar container */
 .nav-bar {
-  background: #212a3e; /* dark background */
+  background: #212a3e; 
+  /* background: #264067; */
+  /* background: #4d5d80; */
   box-shadow: 0 4px 32px rgba(33, 42, 62, 0.13);
   color: white !important;
 }
@@ -89,7 +91,6 @@
 }
 .home-page {
   /* background-color: #6c63ff !important; */
-
 }
 #projects {
 }
