@@ -1,20 +1,33 @@
-/* Logo and brand */
-
-.nav-bar {
-  background-color: whitesmoke;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  /* background: linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%); */
+/* Entry animation on mount */
+.navbar {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.8s, transform 0.8s;
 }
+.navbar-appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navbar container */
+.nav-bar {
+  background: #212a3e; /* dark background */
+  box-shadow: 0 4px 32px rgba(33, 42, 62, 0.13);
+  color: white !important;
+}
+
+/* NK logo: circle + highlight */
 .brand-logo {
   background-color: #6c63ff;
+  color: #fff !important;
+  /* border: 2.5px solid #fff; */
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.23);
   border-radius: 50%;
   padding: 5px;
   height: 45px;
   width: 45px;
   font-size: 22px;
   font-weight: bold;
-  color: white !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,21 +35,20 @@
 
 .brand-name {
   font-weight: 500;
+  color: #fff !important; /* brand name also white */
 }
 
-.bg-body-tertiary {
-  background-color: #f8f9fa;
-}
-
+/* Nav links – white default */
 .navbar .nav-link {
-  color: inherit;
+  color: #fff !important; /* white text */
   position: relative;
   text-decoration: none;
   transition: color 0.3s ease;
+  /* font-weight: 500; */
 }
 
 .navbar .nav-link:hover {
-  color: #6c63ff;
+  color: #6c63ff !important; /* purple on hover */
 }
 
 .navbar .nav-link::after {
@@ -46,17 +58,38 @@
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: #6c63ff;
+  border-radius: 1px;
+  background: linear-gradient(90deg, #6c63ff 0%, #857cff 100%);
   transform: translateX(-50%);
-  transition: width 0.3s ease, left 0.3s ease;
+  transition: width 0.4s cubic-bezier(0.61, 0.01, 0.41, 1.14),
+    left 0.4s cubic-bezier(0.61, 0.01, 0.41, 1.14);
 }
 
 .navbar .nav-link:hover::after {
   width: 80%;
 }
 
+/* Responsive toggle */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .nav-menu-toggle-btn i {
     display: none;
   }
+}
+
+/* Other sections (empty now) */
+.skills-section {
+}
+.about-page {
+}
+.contact-page {
+}
+.timeline-section {
+}
+.footer {
+}
+.home-page {
+  /* background-color: #6c63ff !important; */
+
+}
+#projects {
 }
