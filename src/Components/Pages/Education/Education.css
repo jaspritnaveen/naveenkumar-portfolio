@@ -124,7 +124,10 @@
     left: 60px;
   }
 
-  
+  .left::after,
+  .right::after {
+    left: 18px;
+  }
 
   .right {
     left: 0%;
