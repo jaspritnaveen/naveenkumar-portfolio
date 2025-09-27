@@ -1,139 +1,132 @@
-/* The actual timeline (the vertical ruler) */
+/* Final CSS with reduced card width */
 .main-timeline {
   position: relative;
 }
 
-
-
-/* The actual timeline (the vertical ruler) */
 .main-timeline::after {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: #6c63ff;
+  background: linear-gradient(to bottom, #6c63ff, #8e7dff);
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+  border-radius: 3px;
 }
 
-/* Container around content */
 .timeline {
   position: relative;
   background-color: inherit;
   width: 50%;
+  transition: transform 0.3s ease;
 }
 
-/* The circles on the timeline */
 .timeline::after {
   content: "";
   position: absolute;
   width: 25px;
   height: 25px;
   right: -13px;
-  background-color: #ffff;
-  border: 7px solid #6c63ff;
+  background-color: #fff;
+  border: 5px solid #6c63ff;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
+  transition: all 0.3s ease;
 }
 
-/* Place the container to the left */
+.card {
+  /* box-shadow: 0 10px 25px rgba(108, 99, 255, 0.2); */
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  border-radius: 15px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  max-width: 500px; /* Adjust this value as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(108, 99, 255, 0.3);
+}
+
+.card-body {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 15px;
+  position: relative;
+}
+
+.timeline-year {
+  font-weight: 700;
+  color: #6c63ff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-institute {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-percentage {
+  display: inline-block;
+  background: linear-gradient(to right, #6c63ff, #8e7dff);
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
 .left {
   padding: 0px 40px 20px 0px;
   left: 0;
 }
 
-/* Place the container to the right */
 .right {
   padding: 0px 0px 20px 40px;
   left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
+.left::before,
 .right::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  content: none;
 }
 
-.card {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Fix the circle for containers on the right side */
 .right::after {
   left: -12px;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-  .timeline-section {
-    font-size: 80% !important;
-  }
-  /* Place the timelime to the left */
   .main-timeline::after {
     left: 31px;
   }
 
-  /* Full-width containers */
   .timeline {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-  /* Make sure that all arrows are pointing leftwards */
   .timeline::before {
     left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
   }
 
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 18px;
-  }
+  
 
-  .left::before {
-    right: auto;
-  }
-
-  /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
-  }
-
-  .timeline-one {
-    margin-left: auto;
-    width: auto;
-  }
-
-  .timeline-two {
-    width: auto;
-  }
-
-  .timeline-three {
-    margin-left: auto;
-    width: auto;
   }
 }

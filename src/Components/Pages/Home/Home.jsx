@@ -1,11 +1,9 @@
 import React from "react";
 import "./Home.css";
 
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-// import img from "../../../Assets/gif.png";
 import professionalimg from "../../../Assets/image.png";
 import resume from "../../../Assets/Resume/Naveenkumarresume.pdf";
 
@@ -14,8 +12,11 @@ function Home() {
     <div className="home-page d-flex flex-column flex-md-row align-items-md-center justify-content-center">
       <Row className="align-items-center gx-5">
         {/* Left Column */}
-        <Col xs={12} md={6} className="text-center text-md-start mb-4 mb-md-0">
-         
+        <Col
+          xs={12}
+          md={6}
+          className="text-center text-md-start mb-4 mb-md-0 home-left-part"
+        >
           <h1 className="hero-title fw-bold pt-3">
             Hi, I'm <span className="hero-name">Naveenkumar R</span>
           </h1>
@@ -28,15 +29,13 @@ function Home() {
           </p>
 
           <div className="home-button d-flex justify-content-center justify-content-md-start gap-3 mt-4">
-            <Button variant="outline-primary">My Projects</Button>
-            <Button variant="outline-primary">Contact Me</Button>
+            <Button>My Projects</Button>
+            <Button>Contact Me</Button>
           </div>
 
           <div>
             <a href={resume} download="Naveenkumar_Resume.pdf">
-              <Button variant="outline-primary" className="mt-3 ps-4 pe-4">
-                Download CV
-              </Button>
+              <Button className="mt-3 ps-4 pe-4">Download CV</Button>
             </a>
           </div>
 
@@ -64,7 +63,7 @@ function Home() {
 
               <li>
                 <a href="mailto:jaspritnaveen@gmail.com">
-                  <i className="bi bi-envelope-fill fs-4"></i>
+                  <i className="bi bi-envelope fs-4"></i>
                 </a>
               </li>
 
