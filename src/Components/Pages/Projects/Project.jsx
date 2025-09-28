@@ -107,7 +107,7 @@ const Project = () => {
                       rel="noopener noreferrer"
                     >
                       <i className="fas fa-link" aria-hidden="true"></i>
-                      <span>View Project</span>
+                      <span>Open</span>
                     </a>
                     <a
                       href={project.githubLink}

@@ -1,14 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import resume from "../../../Assets/Resume/Naveenkumarresume.pdf";
-import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import Modal from "react-bootstrap/Modal";
+
 export const ContactUs = () => {
   const formRef = useRef(null);
   const [validated, setValidated] = useState(false);
@@ -43,9 +44,9 @@ export const ContactUs = () => {
           console.log("SUCCESS!");
           formRef.current.reset();
           setValidated(false);
-          // show the alert
+          // show the alert modal
           setShowAlert(true);
-          // auto-hide after 3 seconds
+          // auto-hide after 5 seconds
           setTimeout(() => setShowAlert(false), 3000);
         },
         (error) => {
@@ -54,13 +55,16 @@ export const ContactUs = () => {
         }
       );
   };
+
   return (
     <>
       <div className="contact-page p-3 bg-dark text-white">
         <div className="contact-welcome text-center">
           <h2>Let’s Connect</h2>
-          I’d love to hear from you! Whether you have a project idea, a
-          question, or just want to say hi, feel free to drop me a message.
+          <p>
+            I’d love to hear from you! Whether you have a project idea, a
+            question, or just want to say hi, feel free to drop me a message.
+          </p>
         </div>
 
         <div className="container p-0 p-md-4">
@@ -113,7 +117,7 @@ export const ContactUs = () => {
                       <div className="icon-content resume-sec">
                         <h5>Resume</h5>
                         <a href={resume} className="gap-2">
-                          <i className="bi bi-download"></i> Download My Resume
+                          <i className="bi bi-download"></i> Download CV
                         </a>
                       </div>
                     </li>
@@ -257,6 +261,22 @@ export const ContactUs = () => {
           </div>
         </div>
       </div>
+
+      {/* ✅ Success Modal */}
+      <Modal
+        show={showAlert}
+        onHide={() => setShowAlert(false)}
+        centered
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Thank you!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Thanks for contacting me. We will get back to you soon.
+        </Modal.Body>
+      </Modal>
     </>
   );
 };

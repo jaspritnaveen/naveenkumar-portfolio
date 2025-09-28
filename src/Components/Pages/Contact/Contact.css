@@ -109,6 +109,7 @@
   align-items: center;
   gap: 6px;
   transition: all 0.3s ease;
+  margin-top: 15px;
 }
 
 .resume-sec a:hover {
@@ -203,5 +204,8 @@
   .resume-sec a {
     font-size: 0.9rem;
     padding: 5px 12px;
+  }
+  .resume-sec i {
+    font-size: 11px;
   }
 }
