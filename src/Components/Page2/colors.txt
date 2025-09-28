@@ -1,0 +1,39 @@
+:root {
+  /* Primary Colors */
+  --primary-purple: #6c63ff;
+  --secondary-purple: #8e7dff;
+  --alt-purple: #4b42e0;
+
+  /* Neutral / Backgrounds */
+  --white: #ffffff;
+  --light-gray: #f9f9f9;
+  --gradient-about: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --gradient-timeline: linear-gradient(to bottom, var(--primary-purple), var(--secondary-purple));
+  --gradient-timeline-btn: linear-gradient(to right, var(--primary-purple), var(--secondary-purple));
+  --gradient-contact: linear-gradient(135deg, var(--primary-purple) 0%, var(--alt-purple) 100%);
+  --gradient-contact-hover: linear-gradient(135deg, var(--alt-purple) 0%, var(--primary-purple) 100%);
+  --gradient-live-btn: linear-gradient(90deg, var(--primary-purple), var(--secondary-purple));
+  --gradient-live-btn-hover: linear-gradient(90deg, var(--secondary-purple), var(--primary-purple));
+
+  /* Text Colors */
+  --text-dark: #333333;
+  --text-medium: #555555;
+  --text-muted: #777777;
+  --text-hero: var(--primary-purple);
+  --text-tag: #5d5d81;
+  --text-default: #2f2e41;
+  --text-white: #ffffff;
+
+  /* Box Shadows */
+  --shadow-light-purple: rgba(108, 99, 255, 0.15);
+  --shadow-medium-purple: rgba(108, 99, 255, 0.25);
+  --shadow-btn-hover: rgba(108, 99, 255, 0.3);
+  --shadow-card-hover: rgba(108, 99, 255, 0.3);
+  --shadow-contact: rgba(76, 63, 191, 0.3);
+  --shadow-contact-hover: rgba(76, 63, 191, 0.4);
+  --shadow-project-light: rgba(0, 0, 0, 0.1);
+  --shadow-project-hover: rgba(0, 0, 0, 0.2);
+
+  /* Borders */
+  --border-primary-purple: var(--primary-purple);
+}

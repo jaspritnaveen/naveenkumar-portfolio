@@ -28,24 +28,24 @@
   line-height: 2;
 }
 
-/* Buttons style - White with purple border/text */
-.home-button .btn,
-.home-left-part a .btn {
-  background: #ffffff;
-  color: #6c63ff;
-  border: 2px solid #6c63ff;
-  font-weight: 600;
-  padding: 10px 25px;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-}
+  /* Buttons style - White with purple border/text */
+  .home-button .btn,
+  .home-left-part a .btn {
+    background: #ffffff;
+    color: #6c63ff;
+    border: 2px solid #6c63ff;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
 
-.home-button .btn:hover,
-.home-left-part a .btn:hover {
-  background: #6c63ff;
-  color: #ffffff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
+  .home-button .btn:hover,
+  .home-left-part a .btn:hover {
+    background: #6c63ff;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
 
 /* Contact Icons - Purple Gradient Circles with white icons */
 .contact-icon-part ul li {

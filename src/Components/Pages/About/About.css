@@ -1,26 +1,105 @@
+/* Background */
 .about-page {
-  /* background-color: #fdfdfd !important; */
-
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
+/* Headings */
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6c63ff;
+}
+
+.about-subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Image */
 .about-img {
   height: 430px !important;
   width: 300px;
-  border-radius: 10px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(108, 99, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.about-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(108, 99, 255, 0.25);
+}
+
+/* Intro Text */
+.about-intro {
+  text-align: justify;
+  line-height: 30px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Quick Info */
 .quick-info {
   line-height: 35px;
+  font-size: 0.95rem;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.quick-info li strong {
+  color: #6c63ff;
 }
 
 .quick-info li a {
   text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
-/* Right side */
+.quick-info li a:hover {
+  color: #6c63ff;
+}
 
-.about-intro {
-  text-align: justify;
-  line-height: 30px;
+/* Solid Purple Button */
+.btn.resume-btn {
+  background: #6c63ff;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn.resume-btn:hover {
+  background: #5549c8;
+  box-shadow: 0 6px 20px rgba(108, 99, 255, 0.3);
+  transform: translateY(-2px);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-page .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about-img {
+    width: 250px;
+    height: auto !important;
+  }
+
+  .col-12.col-md-7 {
+    margin-top: 20px;
+  }
+
+  .resume-btn {
+    width: 100%; /* full width on mobile */
+    padding: 12px 0;
+  }
 }

@@ -1,17 +1,207 @@
-.contact-page .resume-sec a {
-  text-decoration: none;
+/* Root variables for easy theming */
+:root {
+  --primary-purple: #6c63ff;
+  --secondary-purple: #8e7dff;
+  --alt-purple: #4b42e0;
+  --white: #ffffff;
+  --text-dark: #2f2e41;
+  --text-muted: #555555;
+  --light-bg: #f9f9f9;
+  --shadow-light: rgba(108, 99, 255, 0.15);
+  --shadow-medium: rgba(108, 99, 255, 0.25);
 }
 
+/* Contact Page Main */
+.contact-page {
+  background: linear-gradient(135deg, var(--light-bg), #e0e5ff);
+  color: var(--text-dark);
+  padding: 60px 20px;
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
 
+/* Heading & Intro */
+.contact-welcome {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--primary-purple);
+}
+
+.contact-welcome h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-welcome p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* Left Part: Info & Icons */
+.contact-left-part h2 {
+  color: var(--primary-purple);
+  margin-bottom: 15px;
+}
+
+.contact-left-part p {
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Icon Boxes */
 .icon-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background-color: #6c63ff;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 600 !important;
+  background: linear-gradient(
+    135deg,
+    var(--primary-purple),
+    var(--secondary-purple)
+  );
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 700 !important;
+  transition: all 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 10px 25px var(--shadow-medium);
+}
+
+/* Contact Info Items */
+.icons-part li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.icon-content h5 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--primary-purple);
+}
+
+.icon-content p {
+  margin: 0;
+  color: var(--text-dark);
+}
+
+/* Resume Link */
+.resume-sec a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  background: linear-gradient(
+    135deg,
+    var(--primary-purple),
+    var(--secondary-purple)
+  );
+  padding: 6px 14px;
+  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.resume-sec a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--shadow-medium);
+}
+
+/* Social Icons */
+.contact-icon-part ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  background: linear-gradient(135deg, var(--primary-purple), var(--alt-purple));
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.contact-icon-part ul li:hover {
+  transform: scale(1.1) translateY(-3px);
+  background: linear-gradient(135deg, var(--alt-purple), var(--primary-purple));
+  box-shadow: 0 10px 25px var(--shadow-medium);
+}
+
+.contact-icon-part ul li i {
+  font-size: 20px;
+  color: var(--white) !important;
+}
+
+/* Right Part: Form Styling */
+.contact-right-part .contact-form-wrapper {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px var(--shadow-light);
+}
+
+.contact-right-part .form-label {
+  font-weight: 600;
+  color: var(--primary-purple);
+}
+
+.contact-right-part .form-control {
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-right-part .form-control:focus {
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 10px var(--shadow-light);
+}
+
+.contact-right-part button[type="submit"] {
+  background: linear-gradient(
+    90deg,
+    var(--primary-purple),
+    var(--secondary-purple)
+  );
+  border: none;
+  color: var(--white);
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.contact-right-part button[type="submit"]:hover {
+  background: linear-gradient(
+    90deg,
+    var(--secondary-purple),
+    var(--primary-purple)
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--shadow-medium);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-left-part,
+  .contact-right-part {
+    margin-bottom: 40px;
+  }
+
+  .contact-welcome {
+    font-size: 1.2rem;
+  }
+
+  .resume-sec a {
+    font-size: 0.9rem;
+    padding: 5px 12px;
+  }
 }

@@ -1,9 +1,9 @@
-/* Final CSS with reduced card width */
-.main-timeline {
+/* Education Timeline Section */
+.timeline-section .main-timeline {
   position: relative;
 }
 
-.main-timeline::after {
+.timeline-section .main-timeline::after {
   content: "";
   position: absolute;
   width: 6px;
@@ -15,14 +15,14 @@
   border-radius: 3px;
 }
 
-.timeline {
+.timeline-section .timeline {
   position: relative;
   background-color: inherit;
   width: 50%;
   transition: transform 0.3s ease;
 }
 
-.timeline::after {
+.timeline-section .timeline::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -36,51 +36,50 @@
   transition: all 0.3s ease;
 }
 
-.card {
-  /* box-shadow: 0 10px 25px rgba(108, 99, 255, 0.2); */
+.timeline-section .card {
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   border-radius: 15px;
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
-  max-width: 500px; /* Adjust this value as needed */
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.card:hover {
+.timeline-section .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(108, 99, 255, 0.3);
 }
 
-.card-body {
+.timeline-section .card-body {
   padding: 2rem;
   background: #fff;
   border-radius: 15px;
   position: relative;
 }
 
-.timeline-year {
+.timeline-section .timeline-year {
   font-weight: 700;
   color: #6c63ff;
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.timeline-title {
+.timeline-section .timeline-title {
   font-weight: 600;
   color: #333;
   font-size: 1.2rem;
   margin-bottom: 0.3rem;
 }
 
-.timeline-institute {
+.timeline-section .timeline-institute {
   color: #555;
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
 }
 
-.timeline-percentage {
+.timeline-section .timeline-percentage {
   display: inline-block;
   background: linear-gradient(to right, #6c63ff, #8e7dff);
   color: #fff;
@@ -90,46 +89,50 @@
   font-size: 0.85rem;
 }
 
-.left {
-  padding: 0px 40px 20px 0px;
+/* Left / Right Positioning */
+.timeline-section .left {
+  padding: 0 40px 20px 0;
   left: 0;
 }
 
-.right {
-  padding: 0px 0px 20px 40px;
+.timeline-section .right {
+  padding: 0 0 20px 40px;
   left: 50%;
 }
 
-.left::before,
-.right::before {
+/* Remove default before pseudo-elements */
+.timeline-section .left::before,
+.timeline-section .right::before {
   content: none;
 }
 
-.right::after {
+/* Adjust the right timeline circle */
+.timeline-section .right::after {
   left: -12px;
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 600px) {
-  .main-timeline::after {
+  .timeline-section .main-timeline::after {
     left: 31px;
   }
 
-  .timeline {
+  .timeline-section .timeline {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-  .timeline::before {
+  .timeline-section .timeline::before {
     left: 60px;
   }
 
-  .left::after,
-  .right::after {
+  .timeline-section .left::after,
+  .timeline-section .right::after {
     left: 18px;
   }
 
-  .right {
+  .timeline-section .right {
     left: 0%;
   }
 }
