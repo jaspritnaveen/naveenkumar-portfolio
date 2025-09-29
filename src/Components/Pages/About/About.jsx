@@ -5,7 +5,7 @@ import resume from "../../../Assets/Resume/Naveenkumarresume.pdf";
 
 const About = () => {
   return (
-    <div className="about-page p-3">
+    <div className="about-page">
       <div className="text-center mb-5">
         <h2 className="about-heading">About Me</h2>
         <p className="about-subtitle">
@@ -15,7 +15,7 @@ const About = () => {
       </div>
 
       <div className="container">
-        <div className="row w-100">
+        <div className="row">
           {/* Left Column – Image */}
           <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
             <img

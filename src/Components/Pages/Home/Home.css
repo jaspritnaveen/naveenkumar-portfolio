@@ -1,54 +1,54 @@
-/* Home Page */
+/* Home Page Scoped CSS */
 .home-page {
-  min-height: 90vh;
   color: #2f2e41;
   padding: 40px 80px;
 }
 
 /* Left Part */
-.home-left-part {
-  background: #ffffff; /* clean white background */
+.home-page .home-left-part {
+  background: #ffffff;
   color: #2f2e41 !important;
   padding: 40px;
 }
 
-/* Text colors */
-.hero-title span {
-  color: #6c63ff !important; /* accent color for your name */
-}
-
-.hero-title {
+/* Hero Title and Name */
+.home-page .hero-title {
   font-size: 48px !important;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-.hero-subtitle {
+.home-page .hero-title span {
+  color: #6c63ff !important;
+}
+
+/* Hero Subtitle */
+.home-page .hero-subtitle {
   text-align: justify;
   line-height: 2;
 }
 
-  /* Buttons style - White with purple border/text */
-  .home-button .btn,
-  .home-left-part a .btn {
-    background: #ffffff;
-    color: #6c63ff;
-    border: 2px solid #6c63ff;
-    font-weight: 600;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-  }
+/* Buttons */
+.home-page .home-button .btn,
+.home-page .home-left-part a .btn {
+  background: #ffffff;
+  color: #6c63ff;
+  border: 2px solid #6c63ff;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
 
-  .home-button .btn:hover,
-  .home-left-part a .btn:hover {
-    background: #6c63ff;
-    color: #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  }
+.home-page .home-button .btn:hover,
+.home-page .home-left-part a .btn:hover {
+  background: #6c63ff;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
-/* Contact Icons - Purple Gradient Circles with white icons */
-.contact-icon-part ul li {
+/* Contact Icons */
+.home-page .contact-icon-part ul li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,25 +62,23 @@
   transition: all 0.3s ease;
 }
 
-.contact-icon-part ul li:hover {
+.home-page .contact-icon-part ul li:hover {
   transform: translateY(-3px) scale(1.05);
   background: linear-gradient(135deg, #4b42e0 0%, #6c63ff 100%);
   box-shadow: 0 12px 24px rgba(76, 63, 191, 0.4);
 }
 
-/* Icons inside li (same color / fill for all) */
-.contact-icon-part ul li i {
+.home-page .contact-icon-part ul li i {
   font-size: 20px;
-  color: #ffffff !important; /* force white for all icons */
+  color: #ffffff !important;
 }
 
-/* Optional: remove link default color */
-.contact-icon-part ul li a {
-  color: inherit;
+.home-page .contact-icon-part ul li a {
+  color: inherit; /* remove default link color */
 }
 
-/* Right Part */
-.profile-image img {
+/* Profile Image */
+.home-page .profile-image img {
   max-width: 100%;
   height: auto;
 }
@@ -92,18 +90,23 @@
     padding: 10px 20px;
   }
 
-  .hero-title {
+  .home-page .hero-title {
     font-size: 32px !important;
     padding: 0 20px;
   }
 
-  .hero-subtitle {
+  .home-page .hero-subtitle {
     padding: 0 5px;
   }
 
-  .home-left-part {
+  .home-page .home-left-part {
     padding: 20px;
     background: #ffffff;
     color: #2f2e41 !important;
+  }
+
+  .home-page .home-button .btn,
+  .home-page .home-left-part a .btn {
+    padding: 8px 16px;
   }
 }

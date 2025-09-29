@@ -1,6 +1,15 @@
 /* Education Timeline Section */
+.education-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6c63ff;
+}
 .timeline-section .main-timeline {
   position: relative;
+}
+
+.timeline-section {
+  padding: 50px 0px;
 }
 
 .timeline-section .main-timeline::after {
@@ -134,5 +143,11 @@
 
   .timeline-section .right {
     left: 0%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .timeline-section .timeline-percentage {
+    font-size: 12px;
   }
 }

@@ -4,8 +4,8 @@ import "./Education.css";
 const EducationTimeline = () => {
   return (
     <section className="timeline-section">
-      <div className="container py-5">
-        <h2 className="text-center pb-5">My Education</h2>
+      <div className="container">
+        <h2 className="text-center pb-5 education-heading">My Education</h2>
         <div className="main-timeline">
           <div className="timeline left timeline-one">
             <div className="card">

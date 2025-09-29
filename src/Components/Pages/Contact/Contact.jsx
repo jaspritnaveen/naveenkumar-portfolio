@@ -10,7 +10,7 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Modal from "react-bootstrap/Modal";
 
-export const ContactUs = () => {
+const Contact = () => {
   const formRef = useRef(null);
   const [validated, setValidated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
@@ -55,7 +55,6 @@ export const ContactUs = () => {
         }
       );
   };
-
   return (
     <>
       <div className="contact-page p-3 bg-dark text-white">
@@ -160,7 +159,7 @@ export const ContactUs = () => {
                   </div>
                 </Col>
 
-                <Col className="contact-right-part ps-0 ps-md-5 ">
+                <Col className="contact-right-part  ps-md-5 ">
                   <Form
                     noValidate
                     validated={validated}
@@ -280,3 +279,5 @@ export const ContactUs = () => {
     </>
   );
 };
+
+export default Contact;

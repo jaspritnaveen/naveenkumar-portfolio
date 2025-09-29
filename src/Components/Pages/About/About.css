@@ -1,7 +1,7 @@
 /* Background */
 .about-page {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  min-height: 100vh;
+  height: max-content;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -101,5 +101,12 @@
   .resume-btn {
     width: 100%; /* full width on mobile */
     padding: 12px 0;
+  }
+}
+
+/* Mobile view */
+@media (min-width: 320px) and (max-width: 480px) {
+  .about-page {
+    padding: 10px 20px;
   }
 }

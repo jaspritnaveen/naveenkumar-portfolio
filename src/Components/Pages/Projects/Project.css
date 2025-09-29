@@ -6,10 +6,10 @@
 
 /* Section Title */
 #projects .section-title h2 {
-  color: #333333;
-  font-weight: 700;
-  font-size: 32px;
   margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6c63ff;
 }
 
 #projects .section-title p {
@@ -154,8 +154,5 @@
 
 /* Project Section */
 #projects {
- 
   padding: 60px 0;
 }
-
-
