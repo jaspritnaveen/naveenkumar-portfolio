@@ -47,13 +47,13 @@ const About = () => {
                 <strong>Role:</strong> Frontend Developer
               </li>
               <li>
-                <strong>Email:</strong>{" "}
+                <strong>Email:</strong>
                 <a href="mailto:jaspritnaveen12@gmail.com">
                   jaspritnaveen12@gmail.com
                 </a>
               </li>
               <li>
-                <strong>Phone:</strong>{" "}
+                <strong>Phone:</strong>
                 <a href="tel:+916383146128">+91 63831 46128</a>
               </li>
               <li>
