@@ -1,0 +1,92 @@
+.not-found {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Large 404 text */
+.error-code {
+  font-size: 10rem;
+  font-weight: 800;
+  margin: 0;
+  color: #ff4b2b;
+  text-shadow: 0 0 25px rgba(255, 75, 43, 0.8);
+  animation: pulse 1.5s infinite alternate;
+}
+
+/* Page not found message */
+.error-text {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* Description */
+.error-desc {
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  margin: 1rem 0 2rem 0;
+  max-width: 500px;
+}
+
+/* Button styling */
+.home-btn {
+  background-color: #ff4b2b;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: white;
+  color: #ff4b2b;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  from {
+    text-shadow: 0 0 15px rgba(255, 75, 43, 0.5);
+  }
+  to {
+    text-shadow: 0 0 35px rgba(255, 75, 43, 1);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .error-code {
+    font-size: 6rem;
+  }
+
+  .error-text {
+    font-size: 1.5rem;
+  }
+
+  .error-desc {
+    font-size: 1rem;
+  }
+}
