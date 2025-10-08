@@ -1,0 +1,30 @@
+.text-type {
+  display: inline-block;
+  white-space: pre-wrap;
+  font-size: 2.5rem;
+  font-weight: 700;
+  /* font-family: monospace; */
+  color: #6c63ff;
+  margin-bottom: 15px;
+}
+
+.text-type__cursor {
+  margin-left: 0.25rem;
+  display: inline-block;
+  animation: blink 0.8s infinite;
+  opacity: 1;
+}
+
+.text-type__cursor--hidden {
+  visibility: hidden;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

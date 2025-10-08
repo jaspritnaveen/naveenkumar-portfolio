@@ -1,8 +1,7 @@
 .skills-section {
-  background: #f8f9fc; /* very light grey – clean */
-  padding: 60px 0;
+  background: #f8f9fc;
+  padding: 100px 0;
   text-align: center;
-
   background: linear-gradient(135deg, #fafafa, #f0f0f5, #fafafa);
 }
 
@@ -36,13 +35,13 @@
   width: 160px;
   margin: 0;
   flex: 0 0 auto;
-  border: 1px solid #eee; /* subtle border */
+  border: 1px solid #eee;
 }
 
 .skill-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 20px rgba(108, 99, 255, 0.1);
-  border: 1px solid #ddd; /* simple border change */
+  border: 1px solid #ddd;
 }
 
 .skill-icon {

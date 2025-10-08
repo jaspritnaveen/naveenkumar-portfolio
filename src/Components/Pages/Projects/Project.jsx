@@ -17,7 +17,7 @@ const projects = [
       "Built a polished, responsive business site template with modular components for a consistent user experience.",
     tags: ["HTML", "CSS", "Bootstrap"],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/jaspritnaveen/Business-Website",
   },
   {
     title: "Dairy Products Website",
@@ -26,7 +26,7 @@ const projects = [
       "Built a structured, fully responsive website to showcase dairy products with a clean and user-friendly design.",
     tags: ["HTML", "CSS"],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/jaspritnaveen/Milky-Mist",
   },
   {
     title: "Travel Agency Website",
@@ -35,7 +35,7 @@ const projects = [
       "Designed and implemented a responsive travel agency website with clean layouts to highlight packages and services.",
     tags: ["HTML", "CSS", "Bootstrap"],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/jaspritnaveen/Villa-Agency",
   },
   {
     title: "Portfolio Website",
@@ -44,7 +44,7 @@ const projects = [
       "Built a React.js portfolio with reusable components and a responsive design to showcase projects, skills, and achievements.",
     tags: ["HTML", "CSS", "Bootstrap", "React Js"],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/jaspritnaveen/naveenkumar-portfolio",
   },
   {
     title: "Form Validation Project",
@@ -53,7 +53,7 @@ const projects = [
       "Developed a form validation system using HTML, CSS, and JavaScript to ensure accurate and user-friendly input handling.",
     tags: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://learnhub-dc69d.web.app",
-    githubLink: "#",
+    githubLink: "https://github.com/jaspritnaveen/3D-CoverFlow-",
   },
   {
     title: "Responsive Business Website",
@@ -61,8 +61,8 @@ const projects = [
     description:
       "Developed a fully responsive multi-page website with modern layouts and custom content, optimized for mobile devices.",
     tags: ["HTML", "CSS", "Bootstrap", "React JS"],
-    liveLink: "https://your-live-link.com",
-    githubLink: "https://github.com/your-repo",
+    liveLink: "https://github.com/jaspritnaveen/Mexant-website",
+    githubLink: "https://github.com/jaspritnaveen/Mexant-website",
   },
 ];
 

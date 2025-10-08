@@ -9,6 +9,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Modal from "react-bootstrap/Modal";
+import TextType from "./Texttype";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -59,7 +60,22 @@ const Contact = () => {
     <>
       <div className="contact-page p-3 bg-dark text-white">
         <div className="contact-welcome text-center">
-          <h2>Let’s Connect</h2>
+          {/* <h2>Let’s Connect</h2> */}
+          <div style={{ textAlign: "center" }}>
+            <TextType
+              text={[
+                "Get in Touch",
+                "Reach Out",
+                "Say Hi...",
+                "Let’s Collaborate",
+              ]}
+              typingSpeed={85}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+              textColors={["#6c63ff"]}
+            />
+          </div>
           <p>
             I’d love to hear from you! Whether you have a project idea, a
             question, or just want to say hi, feel free to drop me a message.
@@ -251,7 +267,7 @@ const Contact = () => {
                     </Row>
 
                     <Button variant="primary" type="submit" className="w-100">
-                      Submit form
+                      Submit Message
                     </Button>
                   </Form>
                 </Col>

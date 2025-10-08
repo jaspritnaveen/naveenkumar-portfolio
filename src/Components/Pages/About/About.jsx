@@ -48,13 +48,14 @@ const About = () => {
               </li>
               <li>
                 <strong>Email:</strong>
-                <a href="mailto:jaspritnaveen12@gmail.com">
+                <a href="mailto: jaspritnaveen12@gmail.com">
+                  {" "}
                   jaspritnaveen12@gmail.com
                 </a>
               </li>
               <li>
                 <strong>Phone:</strong>
-                <a href="tel:+916383146128">+91 63831 46128</a>
+                <a href="tel:+916383146128"> +91 63831 46128</a>
               </li>
               <li>
                 <strong>Address:</strong> Thandukkaranpalayam, Avinashi,
