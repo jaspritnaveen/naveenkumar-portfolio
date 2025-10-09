@@ -9,7 +9,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Modal from "react-bootstrap/Modal";
-import TextType from "./Texttype";
+import TextType from "../Texttype/Texttype";
 
 const Contact = () => {
   const formRef = useRef(null);
