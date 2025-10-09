@@ -7,7 +7,6 @@ import Skills from "./Components/Pages/Skills/Skills";
 import Project from "./Components/Pages/Projects/Project";
 import Contact from "./Components/Pages/Contact/Contact";
 import Footer from "./Components/Pages/Footer/Footer";
-// import Welcome from "./Components/Pages/Welcome/Welcome";
 import Notfound from "./Components/Pages/Notfound/Notfound";
 import { Routes, Route } from "react-router-dom";
 

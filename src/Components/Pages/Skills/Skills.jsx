@@ -11,87 +11,33 @@ import Github from "../../../Assets/Skills/github.png";
 import sqlimg from "../../../Assets/Skills/sql.png";
 
 const Skills = () => {
+  // All skills stored in one array
+  const skills = [
+    { img: Html, name: "HTML" },
+    { img: Css, name: "CSS" },
+    { img: JavaScript, name: "JavaScript" },
+    { img: Bootstrap, name: "Bootstrap" },
+    { img: ReactImg, name: "React" },
+    { img: sqlimg, name: "SQL" },
+    { img: Java, name: "Java" },
+    { img: Github, name: "GitHub" },
+  ];
+
   return (
-    <>
-      <section id="skills" className="skills-section">
-        <h2 className="mb-5">My Skills</h2>
-        <div className="skills-slider">
-          <div className="skills-track">
-            {/* 1st Set */}
-            <div className="skill-card">
-              <img src={Html} className="skill-icon" alt="HTML" />
-              <h4>HTML</h4>
+    <section id="skills" className="skills-section">
+      <h2 className="mb-5">My Skills</h2>
+      <div className="skills-slider">
+        <div className="skills-track">
+          {/* Render skills twice for seamless infinite scroll effect */}
+          {[...skills, ...skills].map((skill, index) => (
+            <div className="skill-card" key={index}>
+              <img src={skill.img} className="skill-icon" alt={skill.name} />
+              <h4>{skill.name}</h4>
             </div>
-            <div className="skill-card">
-              <img src={Css} className="skill-icon" alt="CSS" />
-              <h4>CSS</h4>
-            </div>
-            <div className="skill-card">
-              <img src={JavaScript} className="skill-icon" alt="JavaScript" />
-              <h4>JavaScript</h4>
-            </div>
-            <div className="skill-card">
-              <img src={Bootstrap} className="skill-icon" alt="Bootstrap" />
-              <h4>Bootstrap</h4>
-            </div>
-            <div className="skill-card">
-              <img src={ReactImg} className="skill-icon" alt="React" />
-              <h4>React</h4>
-            </div>
-
-            <div className="skill-card">
-              <img src={sqlimg} className="skill-icon" alt="React" />
-              <h4>SQL</h4>
-            </div>
-
-            <div className="skill-card">
-              <img src={Java} className="skill-icon" alt="Java" />
-              <h4>Java</h4>
-            </div>
-
-            <div className="skill-card">
-              <img src={Github} className="skill-icon" alt="GitHub" />
-              <h4>GitHub</h4>
-            </div>
-
-            {/* Duplicate set */}
-            <div className="skill-card">
-              <img src={Html} className="skill-icon" alt="HTML" />
-              <h4>HTML</h4>
-            </div>
-            <div className="skill-card">
-              <img src={Css} className="skill-icon" alt="CSS" />
-              <h4>CSS</h4>
-            </div>
-            <div className="skill-card">
-              <img src={JavaScript} className="skill-icon" alt="JavaScript" />
-              <h4>JavaScript</h4>
-            </div>
-            <div className="skill-card">
-              <img src={Bootstrap} className="skill-icon" alt="Bootstrap" />
-              <h4>Bootstrap</h4>
-            </div>
-            <div className="skill-card">
-              <img src={ReactImg} className="skill-icon" alt="React" />
-              <h4>React</h4>
-            </div>
-            <div className="skill-card">
-              <img src={sqlimg} className="skill-icon" alt="React" />
-              <h4>SQL</h4>
-            </div>
-            <div className="skill-card">
-              <img src={Java} className="skill-icon" alt="Java" />
-              <h4>Java</h4>
-            </div>
-
-            <div className="skill-card">
-              <img src={Github} className="skill-icon" alt="GitHub" />
-              <h4>GitHub</h4>
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
