@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website built with **React.js**.  
 This portfolio showcases my **projects, skills, education, and career journey** as a frontend developer.
 
-<img width="1500" height="6214" alt="Portfolio_Full_Screen_Shot" src="https://github.com/user-attachments/assets/767d2240-3883-4f4f-8b0d-f877bad83dff" />
+<img width="auto" height="auto" alt="Portfolio_Full_Screen_Shot" src="https://github.com/user-attachments/assets/767d2240-3883-4f4f-8b0d-f877bad83dff" />
 
 
 ## 👨‍💻 About Me
