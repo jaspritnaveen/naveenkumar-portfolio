@@ -74,9 +74,10 @@ const Contact = () => {
               showCursor={true}
               cursorCharacter="|"
               textColors={["#6c63ff"]}
+              className="pt-3"
             />
           </div>
-          <p>
+          <p id="contact-id">
             I’d love to hear from you! Whether you have a project idea, a
             question, or just want to say hi, feel free to drop me a message.
           </p>
@@ -86,7 +87,7 @@ const Contact = () => {
           <div className="contact-parts p-0 p-md-4">
             <Container fluid>
               <Row>
-                <Col className="contact-left-part pt-4 pt-md-0 ">
+                <Col md={6} className="contact-left-part pt-4 pt-md-0 ">
                   <h2>Open to Opportunities</h2>
                   <p>
                     If you’re looking for a dedicated developer for your team or
@@ -175,7 +176,7 @@ const Contact = () => {
                   </div>
                 </Col>
 
-                <Col className="contact-right-part  ps-md-5 ">
+                <Col md={6}  className="contact-right-part  ps-md-5 ">
                   <Form
                     noValidate
                     validated={validated}

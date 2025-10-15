@@ -35,8 +35,8 @@ function Home() {
             </p>
 
             <div className="home-button d-flex justify-content-center justify-content-md-start gap-3 mt-4">
-              <Button>My Projects</Button>
-              <Button>Contact Me</Button>
+              <Button href="#projects">My Projects</Button>
+              <Button href="#contact-id">Contact Me</Button>
             </div>
 
             <div>

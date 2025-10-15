@@ -6,6 +6,7 @@
 
 /* Section Title */
 #projects .section-title h2 {
+  padding-top: 25px;  
   margin-bottom: 10px;
   font-size: 2.5rem;
   font-weight: 700;
@@ -38,7 +39,7 @@
 #projects .project-image img {
   width: 100%;
   height: 220px;
-  object-fit: cover;
+  /* object-fit: cover; */
   transition: transform 0.5s ease;
 }
 

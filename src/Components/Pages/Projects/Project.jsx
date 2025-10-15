@@ -16,7 +16,7 @@ const projects = [
     description:
       "Built a polished, responsive business site template with modular components for a consistent user experience.",
     tags: ["HTML", "CSS", "Bootstrap"],
-    liveLink: "#",
+    liveLink: "https://nk-business.netlify.app",
     githubLink: "https://github.com/jaspritnaveen/Business-Website",
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     description:
       "Built a structured, fully responsive website to showcase dairy products with a clean and user-friendly design.",
     tags: ["HTML", "CSS"],
-    liveLink: "#",
+    liveLink: "https://nk-milkymist.web.app",
     githubLink: "https://github.com/jaspritnaveen/Milky-Mist",
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     description:
       "Designed and implemented a responsive travel agency website with clean layouts to highlight packages and services.",
     tags: ["HTML", "CSS", "Bootstrap"],
-    liveLink: "#",
+    liveLink: "https://nk-villa.netlify.app",
     githubLink: "https://github.com/jaspritnaveen/Villa-Agency",
   },
   {
@@ -52,7 +52,7 @@ const projects = [
     description:
       "Developed a form validation system using HTML, CSS, and JavaScript to ensure accurate and user-friendly input handling.",
     tags: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://learnhub-dc69d.web.app",
+    liveLink: "https://nk-3dcoverflow.web.app",
     githubLink: "https://github.com/jaspritnaveen/3D-CoverFlow-",
   },
   {
@@ -61,7 +61,7 @@ const projects = [
     description:
       "Developed a fully responsive multi-page website with modern layouts and custom content, optimized for mobile devices.",
     tags: ["HTML", "CSS", "Bootstrap", "React JS"],
-    liveLink: "https://github.com/jaspritnaveen/Mexant-website",
+    liveLink: "https://nk-mexant.web.app ",
     githubLink: "https://github.com/jaspritnaveen/Mexant-website",
   },
 ];

@@ -8,13 +8,14 @@ import Project from "./Components/Pages/Projects/Project";
 import Contact from "./Components/Pages/Contact/Contact";
 import Footer from "./Components/Pages/Footer/Footer";
 import Notfound from "./Components/Pages/Notfound/Notfound";
+import ScrollToTop from "./Components/Pages/ScrollToTop/ScrollToTop";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Header />
-
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

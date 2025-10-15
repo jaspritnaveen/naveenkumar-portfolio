@@ -44,7 +44,7 @@ const About = () => {
                 <strong>Name:</strong> Naveenkumar R
               </li>
               <li>
-                <strong>Role:</strong> Frontend Developer
+                <strong>Role:</strong> Java Full Stack Developer
               </li>
               <li>
                 <strong>Email:</strong>
