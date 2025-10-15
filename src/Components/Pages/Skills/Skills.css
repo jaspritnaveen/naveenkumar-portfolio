@@ -71,3 +71,10 @@
     transform: translateX(-50%);
   }
 }
+
+/* Mobile View */
+@media (min-width: 320px) and (max-width: 480px) {
+  .skills-section {
+    padding: 130px 0;
+  }
+}
