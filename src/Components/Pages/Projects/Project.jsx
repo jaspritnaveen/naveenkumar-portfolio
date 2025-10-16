@@ -20,13 +20,13 @@ const projects = [
     githubLink: "https://github.com/jaspritnaveen/Business-Website",
   },
   {
-    title: "Dairy Products Website",
-    image: milk,
+    title: "Responsive Mexant Website",
+    image: mexantImg,
     description:
-      "Built a structured, fully responsive website to showcase dairy products with a clean and user-friendly design.",
-    tags: ["HTML", "CSS"],
-    liveLink: "https://nk-milkymist.web.app",
-    githubLink: "https://github.com/jaspritnaveen/Milky-Mist",
+      "Developed a fully responsive multi-page website with modern layouts and custom content, optimized for mobile devices.",
+    tags: ["HTML", "CSS", "Bootstrap", "React JS"],
+    liveLink: "https://nk-mexant.web.app ",
+    githubLink: "https://github.com/jaspritnaveen/Mexant-website",
   },
   {
     title: "Travel Agency Website",
@@ -56,13 +56,13 @@ const projects = [
     githubLink: "https://github.com/jaspritnaveen/3D-CoverFlow-",
   },
   {
-    title: "Responsive Business Website",
-    image: mexantImg,
+    title: "Dairy Products Website",
+    image: milk,
     description:
-      "Developed a fully responsive multi-page website with modern layouts and custom content, optimized for mobile devices.",
-    tags: ["HTML", "CSS", "Bootstrap", "React JS"],
-    liveLink: "https://nk-mexant.web.app ",
-    githubLink: "https://github.com/jaspritnaveen/Mexant-website",
+      "Built a structured, fully responsive website to showcase dairy products with a clean and user-friendly design.",
+    tags: ["HTML", "CSS"],
+    liveLink: "https://nk-milkymist.web.app",
+    githubLink: "https://github.com/jaspritnaveen/Milky-Mist",
   },
 ];
 

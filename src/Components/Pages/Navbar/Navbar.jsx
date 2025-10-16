@@ -20,7 +20,6 @@ function NavigationBar() {
   const toggleNav = () => setExpanded((prevExpanded) => !prevExpanded);
 
   return (
-    // 4. Pass the 'expanded' state and 'toggleNav' function to Navbar
     <Navbar
       expand="lg"
       className="p-3 nav-bar"
