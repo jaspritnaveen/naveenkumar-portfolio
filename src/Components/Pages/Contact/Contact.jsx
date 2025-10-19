@@ -78,7 +78,7 @@ const Contact = () => {
             />
           </div>
           <p id="contact-id">
-            I’d love to hear from you! Whether you have a project idea, a
+            I’d love to hear from you! Wea, a
             question, or just want to say hi, feel free to drop me a message.
           </p>
         </div>
