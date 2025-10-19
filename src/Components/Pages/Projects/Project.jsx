@@ -74,7 +74,7 @@ const Project = () => {
           <h2>My Projects</h2>
           <p>
             Here are some of the projects I've worked on during my academic
-            journey
+            journey.
           </p>
         </div>
 
