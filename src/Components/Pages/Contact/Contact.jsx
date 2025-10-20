@@ -78,7 +78,7 @@ const Contact = () => {
             />
           </div>
           <p id="contact-id">
-            I’d love to hear from you! Wea, a
+            I’d love to hear from you! Whether you have a project idea, a
             question, or just want to say hi, feel free to drop me a message.
           </p>
         </div>
@@ -176,7 +176,7 @@ const Contact = () => {
                   </div>
                 </Col>
 
-                <Col md={6}  className="contact-right-part  ps-md-5 ">
+                <Col md={6} className="contact-right-part  ps-md-5 ">
                   <Form
                     noValidate
                     validated={validated}
