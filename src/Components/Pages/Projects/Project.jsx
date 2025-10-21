@@ -80,7 +80,10 @@ const Project = () => {
 
         <div className="px-4 row g-4 gy-4">
           {projects.map((project, index) => (
-            <div key={index} className="col-md-6 col-lg-4 p-0 p-md-4">
+            <div
+              key={index}
+              className="col-md-6 col-lg-4 p-0 p-md-4 mb-5  mb-md-0"
+            >
               <article className="project-card card border-0 h-100 shadow-sm">
                 <div className="project-image">
                   <img

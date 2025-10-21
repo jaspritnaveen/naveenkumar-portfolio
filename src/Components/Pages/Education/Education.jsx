@@ -13,7 +13,7 @@ const EducationTimeline = () => {
                 <div className="timeline-content">
                   <p className="timeline-year">2021 - 2025</p>
                   <h6 className="timeline-title">
-                    Bachelor of Engineering in Computer Science
+                    B.E Computer Science And Engineering
                   </h6>
                   <p className="timeline-institute">
                     Bannari Amman Institute of Technology, Erode

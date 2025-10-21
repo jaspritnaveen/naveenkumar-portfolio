@@ -63,12 +63,7 @@ const Contact = () => {
           {/* <h2>Let’s Connect</h2> */}
           <div style={{ textAlign: "center" }}>
             <TextType
-              text={[
-                "Get in Touch",
-                "Reach Out",
-                "Say Hi...",
-                "Let’s Collaborate",
-              ]}
+              text={["Get in Touch", "Reach Out", "Say Hi...", "Contact Me"]}
               typingSpeed={85}
               pauseDuration={1500}
               showCursor={true}
@@ -112,7 +107,9 @@ const Contact = () => {
                       <div className="icon-content">
                         <h5>Email</h5>
                         <p className="m-0 mb-2">jaspritnaveen@gmail.com</p>
-                        <p>jaspritnaveen12@gmail.com</p>
+                        <p>
+                          naveenkumarnk5577<wbr></wbr>@gmail.com
+                        </p>
                       </div>
                     </li>
 

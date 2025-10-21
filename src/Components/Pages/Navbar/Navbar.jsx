@@ -20,7 +20,7 @@ function NavigationBar() {
   const toggleNav = () => setExpanded((prevExpanded) => !prevExpanded);
 
   return (
-    <Navbar
+     <Navbar
       expand="lg"
       className="p-3 nav-bar"
       sticky="top"
