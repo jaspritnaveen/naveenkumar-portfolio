@@ -60,6 +60,7 @@ I enjoy solving problems, creating clean UI components, and continuously learnin
 - 📧 Email: [jaspritnaveen12@gmail.com](mailto:jaspritnaveen12@gmail.com)
 - 🔗 LinkedIn: [linkedin.com/in/jaspritnaveen](https://www.linkedin.com/in/jaspritnaveen/)
 - 💻 GitHub: [github.com/jaspritnaveen](https://github.com/jaspritnaveen)
+- 🔗 Portfolio:
 
 ---
 
