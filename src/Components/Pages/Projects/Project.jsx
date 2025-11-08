@@ -15,7 +15,7 @@ const projects = [
     image: business,
     description:
       "Built a polished, responsive business site template with modular components for a consistent user experience.",
-    tags: ["HTML", "CSS", "Bootstrap"],
+    tags: ["HTML", "CSS", "Bootstra"],
     liveLink: "https://nk-business.netlify.app",
     githubLink: "https://github.com/jaspritnaveen/Business-Website",
   },
