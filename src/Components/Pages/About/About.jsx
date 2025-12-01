@@ -49,7 +49,8 @@ const About = () => {
               <li>
                 <strong>Email:</strong>
                 <a href="mailto: jaspritnaveen12@gmail.com">
-                  jaspritnaveen@gmail.com
+                  {" "}
+                  jaspritnaveen12@gmail.com{" "}
                 </a>
               </li>
               <li>
