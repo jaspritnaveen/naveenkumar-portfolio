@@ -9,6 +9,12 @@ import ReactImg from "../../../Assets/Skills/react.png";
 import Java from "../../../Assets/Skills/java.png";
 import Github from "../../../Assets/Skills/github.png";
 import sqlimg from "../../../Assets/Skills/sql.png";
+import spring from "../../../Assets/Skills/Spring.png";
+import springBoot from "../../../Assets/Skills/springboot.webp";
+import git from "../../../Assets/Skills/git.png";
+import Jdbc from "../../../Assets/Skills/jdbc.png";
+
+
 
 const Skills = () => {
   // All skills stored in one array
@@ -17,9 +23,13 @@ const Skills = () => {
     { img: Css, name: "CSS" },
     { img: JavaScript, name: "JavaScript" },
     { img: Bootstrap, name: "Bootstrap" },
-    { img: ReactImg, name: "React" },
+    { img: ReactImg, name: "React.js" },
     { img: sqlimg, name: "SQL" },
     { img: Java, name: "Java" },
+    { img: Jdbc, name: "JDBC" },
+    { img: spring, name: "Spring" },
+    { img: springBoot, name: "Spring Boot" },
+    { img: git, name: "Git" },
     { img: Github, name: "GitHub" },
   ];
 
